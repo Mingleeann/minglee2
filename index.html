@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>minglee</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .full-screen-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 確保圖片覆蓋整個頁面 */
+			z-index: -1; /* 確保圖片在文字下層 */
+        }
+		.button-text-overlay button {
+            position: absolute; /* 絕對定位 */
+            top: 30px; /* 距離上方10px */
+            left: 50px; /* 距離左側10px */
+			font-size: 50px; /* 字體大小 */
+            cursor: pointer; /* 指針變為手型 */
+            background-color: transparent; /* 背景透明 */
+            border: 1px solid transparent; /* 白色邊框 */
+            color: black; /* 字體顏色 */
+			font-family: Brush Script MT;
+        }
+		.button-container {
+            position: absolute; /* 絕對定位 */
+            top: 30px; /* 距離上方10px */
+            right: 50px; /* 距離右側10px */
+        }
+        .button-container button {
+            margin: 10px; /* 按鈕之間的間距 */
+            padding: 5px 20px; /* 按鈕內邊距 */
+			color: black;
+			font-family: Brush Script MT;
+            font-size: 30px; /* 字體大小 */
+            cursor: pointer; /* 指針變為手型 */
+        }
+		 .button-container button {
+            margin: 10px; /* 按鈕之間的間距 */
+            padding: 10px 20px; /* 按鈕內邊距 */
+            font-size: 20px; /* 字體大小 */
+            cursor: pointer; /* 指針變為手型 */
+            background-color: transparent; /* 背景透明 */
+            border: 2px solid black; /* 白色邊框 */
+            color: black; /* 字體顏色 */
+            border-radius: 5px; /* 圓角邊框 */
+            transition: background-color 0.3s, color 0.3s; /* 添加過渡效果 */
+        }
+        .button-container button:hover {
+            background-color: black; /* 鼠標懸停時背景變為白色 */
+            color: white; /* 字體顏色變為黑色 */
+        }
+		.centered-text {
+            color: black; /* 字體顏色 */
+            font-size: 150px; /* 字體大小 */
+            font-family: Brush Script MT; /* 字體樣式 */
+            padding: 10px 20px; /* 內邊距 */
+            border-radius: 10px; /* 圓角邊框 */
+            text-align: center; /* 文字居中對齊 */
+			z-index: 1;
+			position: sticky;
+            top: 280px;
+        }
+		.bottom-left-text {
+            position: absolute; /* 絕對定位 */
+            bottom: 30px; /* 距離底部10px */
+            left: 60px; /* 距離左側10px */
+            color: white; /* 字體顏色 */
+            font-size: 24px; /* 字體大小 */
+            font-family: SignPainter; /* 字體樣式 */
+            padding: 5px 10px; /* 內邊距 */
+        }
+		.bottom-right-text {
+            position: absolute; /* 絕對定位 */
+            bottom: 30px; /* 距離底部10px */
+            right: 60px; /* 距離左側10px */
+            color: white; /* 字體顏色 */
+            font-size: 24px; /* 字體大小 */
+            font-family: Xingkai SC; /* 字體樣式 */
+            padding: 5px 10px; /* 內邊距 */
+        }
+		
+    </style>
+</head>
+<body>
+    <img src="img_1.jpg" alt="滿版圖片" class="full-screen-image">
+	<div class="button-text-overlay">
+		<a href="file:///Users/xiaomingli/Desktop/%E6%9C%9F%E6%9C%AB/V1A05.html"><button>milanlee</button></a>
+	</div>
+	<div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300" >
+		<div class="button-container">
+        	<a href="file:///Users/xiaomingli/Desktop/%E6%9C%9F%E6%9C%AB/about.html"><button>about</button></a>
+        	<a href="file:///Users/xiaomingli/Desktop/%E6%9C%9F%E6%9C%AB/photo.html"><button>photo</button></a>
+        	<a href="https://example.com/page3"><button>video</button></a>
+        	<a href="https://example.com/page4"><button>contact</button></a>
+        	<a href="https://example.com/page5"><button>others</button></a>
+    	</div>
+	</div>
+		<div class="centered-text">life film</div>
+	<div class="bottom-left-text">MING LEE, SIAO</div>
+	<div class="bottom-right-text">蕭明麗</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <script>     AOS.init(); </script>
+</body>
+</html>
